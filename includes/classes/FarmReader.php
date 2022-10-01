@@ -1,6 +1,6 @@
 <?php
 
-class BlogReader{
+class FarmReader{
 
     const READER = 1;
     const MEMBER = 2;
@@ -11,7 +11,7 @@ class BlogReader{
     public function __construct(){
         
         $this->db = new Database();
-        $this->type = BlogReader::READER;
+        $this->type = FarmReader::READER;
     }    
     
     //Add getPostsFromDB() here

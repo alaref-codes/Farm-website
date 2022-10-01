@@ -26,7 +26,7 @@
         // }        
         // else
         // {
-        $member = new BlogMember($username, $farmname);
+        $user = new FarmUser($username, $farmname);
 
 
             // if ($member->isDuplicateID())
@@ -34,7 +34,7 @@
             //     $msg = "Username already in use";
             // }
          
-        $member->insertIntoFarmDB($_POST['password']);
+        $user->insertIntoFarmDB($_POST['password']);
 
         header("Location: index.php?new=1");                
         // }

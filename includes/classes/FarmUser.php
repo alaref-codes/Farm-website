@@ -1,6 +1,6 @@
 <?php
 
-    class BlogMember extends BlogReader{
+    class FarmUser extends FarmReader{
         
         private $username;
         private $farmname;
@@ -11,7 +11,7 @@
             $this->username = $pUsername;
             $this->farmname = $pFarmname;
 
-            $this->type = BlogMember::MEMBER;
+            $this->type = FarmUser::MEMBER;
         }
         
         public function isDuplicateID(){

@@ -18,7 +18,7 @@
                     <label class="control-label">Username</label>
                     <div>
                         <input type="text" class="form-control" name="username" <?php $h->keepValues($username, 'textbox'); ?> >
-                    </div>        	
+                    </div>
                 </div>
                 <div class="form-group top"><i class="material-icons">face</i>
                     <label class="control-label">Your Farm Name</label>
