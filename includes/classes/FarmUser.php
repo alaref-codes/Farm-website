@@ -16,14 +16,14 @@
         
         public function isDuplicateID(){
             
-            $sql = "SELECT count(username) AS num FROM users WHERE username = :username";
+            $sql = "SELECT count(id) AS num FROM farm WHERE name = :farmname";
             
             $values = array(
-                array(':username', $this->username)
+                array(':farmname', $this->farmname)
             );
         
             $result = $this->db->queryDB($sql, Database::SELECTSINGLE, $values);
-
+            echo $result['num'];
             if ($result['num'] == 0)
                 return false;
             else

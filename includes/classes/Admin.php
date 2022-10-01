@@ -12,7 +12,7 @@ class Admin{
 
 
     public function isValidLogin($pPassword){
-        $sql = "SELECT password FROM members WHERE username = :username AND is_admin = true";
+        $sql = "SELECT password FROM users WHERE username = :username AND is_admin = true";
 
         $values = array(
             array(':username', $this->username)

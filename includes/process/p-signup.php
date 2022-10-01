@@ -26,17 +26,17 @@
         }        
         else
         {
-            $user = new FarmUser($username, $farmname);
+            $farm = new FarmUser($username, $farmname);
 
 
-            // if ($member->isDuplicateID())
-            // {
-            //     $msg = "Username already in use";
-            // }
+            if ($farm->isDuplicateID())
+            {
+                $msg = "farm name already in use";
+            }
         
-            $user->insertIntoFarmDB($_POST['password']);
+            $farm->insertIntoFarmDB($_POST['password']);
 
             header("Location: index.php?new=1");                
-            }
+        }
             
     }

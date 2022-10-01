@@ -5,7 +5,7 @@
     include INC_DIR.'header.html';
 
 ?>
-
+<script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
     <body>
         <div class="form">
             <div class="heading">
@@ -20,10 +20,10 @@
                         <input type="text" class="form-control" name="username" <?php $h->keepValues($username, 'textbox'); ?> >
                     </div>
                 </div>
-                <div class="form-group top"><i class="material-icons">face</i>
+                <div class="form-group top"><iconify-icon icon="iconoir:farm"  width="35" height="35"></iconify-icon>
                     <label class="control-label">Your Farm Name</label>
                     <div>
-                        <input type="text" class="form-control" name="farmname" <?php $h->keepValues($farmname, 'textbox'); ?> >
+                        <input type="text" class="form-control" name="farmname">
                     </div>        	
                 </div>
                 <div class="form-group"><i class="material-icons">vpn_key</i>
