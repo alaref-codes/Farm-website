@@ -77,7 +77,7 @@
             );
 
             $result = $this->db->queryDB($sql, Database::SELECTSINGLE, $values);
-            
+          
             if (isset($result['password']) && password_verify($pPassword, $result['password']))
                 return true;
             else

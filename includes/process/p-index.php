@@ -14,7 +14,7 @@
         }
         else
         {
-            $member = new BlogMember($username);
+            $member = new FarmUser($username, "");
 
             if (!$member->isValidLogin($_POST['password']))
             {
